@@ -1,0 +1,7 @@
+{
+  "name": "IronVoice - AI Workout Tracker",
+  "description": "A voice-powered workout tracker that uses Gemini AI to parse natural language commands into structured workout logs.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
