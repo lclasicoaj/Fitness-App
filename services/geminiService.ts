@@ -2,9 +2,8 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { AIParseResult } from "../types";
 
 // Initialize Gemini Client
-// NOTE: In a real app, API_KEY should be handled securely. 
-// Here we assume process.env.API_KEY is available as per instructions.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// The API key must be obtained exclusively from the environment variable process.env.API_KEY
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const WORKOUT_PARSER_SCHEMA: Schema = {
   type: Type.OBJECT,
